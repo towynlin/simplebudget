@@ -1,0 +1,7 @@
+= form_for @budget do |f|
+  %fieldset
+    %div= f.label :name, 'name'
+    %div= f.text_field :name
+    %div= f.label :daily_amount, 'daily amount'
+    %div= f.text_field :daily_amount, value: Budget.money_format(@budget.daily_amount)
+    %div= f.submit

@@ -1,0 +1,9 @@
+%h2 budgets
+- if @budgets.empty?
+  %p none yet
+- else
+  %ul
+    - @budgets.each do |budget|
+      %li= link_to budget.name, edit_budget_path(budget)
+%p= link_to 'new', new_budget_path
+  
