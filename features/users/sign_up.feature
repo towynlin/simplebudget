@@ -15,7 +15,7 @@ Feature: Sign up
         | Password              | please          |
         | Password confirmation | please          |
       And I press "Sign up"
-      Then I should see "Welcome! You have signed up successfully." 
+      Then I should see "Welcome! You have signed up successfully."
       
     Scenario: User signs up with invalid email
       And I fill in the following:
